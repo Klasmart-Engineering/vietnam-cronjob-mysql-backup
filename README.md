@@ -13,6 +13,8 @@ The init script of this image requires some variables & credentials to run:
 - MySQL hostname, username, password & database name variables
 - S3 endpoint, region, bucket name variables
 
+A preview for helm chart configuration of this cronjob:
+
 ```
               volumeMounts:
                 - name: s3-bucket-secret
