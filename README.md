@@ -1,10 +1,14 @@
 ## Introduction
-A Docker image which uses for MySQL Back-up cronjob inside K8S Cluser
-This repo only contains the Dockerfile, init script for the Docker image, all the variables & volume are configured by helm chart repo
+
+A Docker image which uses for MySQL Back-up cronjob inside K8S Cluser.
+
+This repo only contains the Dockerfile, init script for the Docker image, 
+all the variables & volume are configured by helm chart repo
 
 ## Environment Variables & Volume Mount
 
 The init script of this image requires some variables & credentials to run:
+
 - AWS Credential for S3/ S3-compatible services, it should be a file that is mounted to /root/.aws/credentials
 - MySQL hostname, username, password & database name variables
 - S3 endpoint, region, bucket name variables
